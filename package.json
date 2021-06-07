@@ -18,6 +18,7 @@
   "author": "Warren Mira <warrenmira@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepare": "npm run dist",
     "predist": "rimraf dist/",
     "dist": "babel src --out-dir dist && cp package.json README.md index.d.ts dist",
     "test": "jest",
