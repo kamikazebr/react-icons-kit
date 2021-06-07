@@ -19,6 +19,8 @@ const walkChildren = (children) => {
         let merge = {};
         if ( attribsMap.fill === 'none' && attribsMap.stroke ) {
             merge = { fill: 'none', stroke: 'currentColor' };
+        } else if ( attribsMap.fill === 'none' ) {
+            merge = { fill: 'none' };
         }
         return createElement(name, { key: idx, ...attribs, ...merge }, gchildren === null ? gchildren : walkChildren(gchildren));
     });
