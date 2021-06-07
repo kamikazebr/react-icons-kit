@@ -25,7 +25,6 @@
     "test:watch": "jest --watch",
     "update:octicons": "npm update @primer/octicons && cd scripts && ./extract-octicons.js"
   },
-  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wmira/react-icons-kit.git"
